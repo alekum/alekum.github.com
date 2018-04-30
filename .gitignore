@@ -2,3 +2,9 @@ _site
 .sass-cache
 Gemfile.lock
 *.gem
+
+# ignore sketches
+sketches/
+
+# ignore drafts
+drafts/
