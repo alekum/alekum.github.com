@@ -96,9 +96,9 @@
 			 	});
 
       // Inactive by default for index
-        if (window.location.pathname == '/index.html') {
+       if (window.location.pathname == '/index.html' || window.location.pathname == "/") {
             $sidebar.addClass('inactive');
-        }
+       }
 
 			// Hack: Workaround for Chrome/Android scrollbar position bug.
 				if (skel.vars.os == 'android'
