@@ -1,3 +1,38 @@
-title: Alekum - the dead engineer's diary
-description: hacking is the way of exploring
+# Author
+author:
+  name: alekum
+  url: "alekum.github.io"
 
+# Site settings
+title: Alekum - the dead engineer's diary
+description: >
+  Hacking is the way of exploring, this is my way of exploring things around me.
+  Keep on looking for the Right Thing To Do.
+github_username: alekum
+permalink: pretty
+exclude: ['sketches', 'posts']
+google_analytics: UA-118468835-1
+avatar: https://avatars2.githubusercontent.com/u/37965087?s=460&v=4
+
+# Build settings
+markdown: kramdown
+version: 1.0.0
+plugins:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
