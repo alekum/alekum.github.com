@@ -6,9 +6,6 @@ Gemfile.lock
 # ignore sketches
 sketches/
 
-# ignore drafts
-drafts/
-
 # some stuff
 elements.html
 generic.html
