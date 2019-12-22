@@ -7,12 +7,9 @@
 								<h2>Menu</h2>
 						</header>
 						<ul>
-								<li><a href="/">Homepage</a></li>
-				<!-- 		<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-                <li><a href="/blog">Blog</a></li> -->
-								<li><a href="public/CV.pdf">Curriculum vitae</a></li>
-								<li><a href="about.html">About me</a></li>
+							{% for link in site.data.menunavi %}
+								<li><a href="{{ link.link }}" {% if page.url == link.link %}style="color:red;"{% endif %}>{{ link.name }}</a></li>
+							{% endfor %}
 						</ul>
 				</nav>
 
@@ -23,14 +20,17 @@
 						</header>
 						<p>Where there is a willing, there is a way</p>
 						<ul class="contact">
-								<li class="fa-envelope-o"><a href="mailto:1ikb3zz@gmail.com?subject=Dead Engineer Diary">Email Me</a></li>
+								<li class="fa-envelope-o"><a href="mailto:rojaster@yandex.ru?subject=Dead Engineer Diary">Email Me</a></li>
 								<li class="fa-telegram"><a href="https://t.me/alekum">Tg Me</a></li>
+								<li class="fa-telegram"><a href="https://t.me/codediggers">Codediggers channel</a>
+								<li class="fa-telegram"><a href="https://t.me/nakeit">Naked IT - all around the industry</a>
+								<li class="fa-telegram"><a href="https://t.me/DeadEngi">Dead Engineering Diary</a>
 						</ul>
 				</section>
 
 				<!-- Footer -->
 				<footer id="footer">
-						<p class="copyright">&copy; ASTEC. Alekum. </p>
+						<p class="copyright">&copy; ASTEC. Alekum. 2020</p>
 				</footer>
 
 		</div>

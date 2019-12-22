@@ -121,7 +121,7 @@
 
 							// Toggle.
 								$sidebar.toggleClass('inactive');
-
+								
 						});
 
 				}

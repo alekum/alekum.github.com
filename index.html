@@ -1,18 +1,34 @@
 ---
-layout: default
+
 ---
 <section id="banner">
 		<div class="content">
-				<header>
-						<h1>Hi, I’m Alekum</h1>
-						<p>A dead engineer and tinker who keeps on looking for the right thing to do</p>
-            <p>Use Menu for navigation</p>
-				</header>
-				<p>Coming Soon I'll finish tinkering aroung this blog</p>
-        <!-- -->
-				<ul class="actions">
-						<li><a href="about.html" class="button big">All the way up</a></li>
-				</ul>
-        <!-- -->
+				<table>
+				<tr style="border:0px;background-color:rgba(255,255,255);vertical-align:middle;">
+					<td>
+					<header>
+							<h1>Hi, I’m Alekum</h1>
+							<p>A dead engineer and tinker</p>
+							<p>Here I am writing about some interesting things to me.</p>
+							<p>Sometimes that stuff is not about technologies.
+							<p>Use Menu for navigation</p>
+					</header>
+					<ul class="actions">
+							<li><a href="posts.html" class="button big">List of posts</a></li>
+					</ul>
+					</td>
+					<td>
+					<h2>Latest Updates</h2>
+					<ul>
+						{% for post in site.posts limit:5 %}
+							<li>
+							<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+							<p>Date: {{ post.date | date_to_string }}</p>
+							</li>
+						{% endfor %}
+						</ul>
+					</td>
+				</tr>
+				</table>
 		</div>
 </section>
