@@ -1,5 +1,0 @@
-I"�<p>In the previous part, we’ve discussed the problem that was presented in <code class="highlighter-rouge">RedBaron</code>. Today I want to show you my old work, my old little investigation about another strange bug(or feature?) in <code class="highlighter-rouge">Baron</code>.<br />
-<code class="highlighter-rouge">Baron</code> is a part of <code class="highlighter-rouge">RedBaron</code> library, literally, <code class="highlighter-rouge">RedBaron</code> relies on <code class="highlighter-rouge">Baron</code> Full Syntax Tree which it’s giving for next manipulations.
-<code class="highlighter-rouge">Baron</code> had a problem with CommentNode’s position in the FST tree.
-This bug broke RedBaron’s nodes recognition.</p>
-:ET
